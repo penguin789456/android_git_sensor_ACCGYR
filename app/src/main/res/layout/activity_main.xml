@@ -51,7 +51,7 @@
         android:layout_marginTop="25dp">
 
         <TextView
-            android:id="@+id/ACCELEROMETER3"
+            android:id="@+id/ACCELEROMETERx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -59,7 +59,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/ACCELEROMETER1"
+            android:id="@+id/ACCELEROMETERy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -67,7 +67,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/ACCELEROMETER2"
+            android:id="@+id/ACCELEROMETERz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"

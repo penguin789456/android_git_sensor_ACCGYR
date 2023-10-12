@@ -31,6 +31,16 @@ class MainActivity : AppCompatActivity(),SensorEventListener {
         gz=findViewById(R.id.showZ)
     }
 
+    override fun onResume() {
+        super.onResume()
+        sensorManager.registerListener(this,grySensor,SensorManager.SENSOR_DELAY_UI)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        sensorManager.unregisterListener(this)
+    }
+
     override fun onSensorChanged(p0: SensorEvent?) {
         gx.text= p0!!.values[0].toString()
         gy.text= p0!!.values[1].toString()

@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(),SensorEventListener {
         init()
 
         sensorManager=getSystemService(Context.SENSOR_SERVICE) as SensorManager
-        grySensor=sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
+        grySensor=sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
     }
     private fun init(){
         gx=findViewById(R.id.showX)

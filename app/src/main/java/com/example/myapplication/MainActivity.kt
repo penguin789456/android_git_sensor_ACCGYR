@@ -42,9 +42,11 @@ class MainActivity : AppCompatActivity(),SensorEventListener {
     }
 
     override fun onSensorChanged(p0: SensorEvent?) {
-        gx.text= p0!!.values[0].toString()
-        gy.text= p0!!.values[1].toString()
-        gz.text= p0!!.values[2].toString()
+        if(p0?.sensor?.type==Sensor.TYPE_GYROSCOPE){
+            gx.text= p0!!.values[0].toString()
+            gy.text= p0!!.values[1].toString()
+            gz.text= p0!!.values[2].toString()
+        }
     }
 
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
